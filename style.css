@@ -66,3 +66,158 @@ blockquote {
 	- https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/
 */
 
+
+
+.blog {
+  display: grid;
+  grid-template-columns: 150px 650px 350px;
+  column-gap: 20px;
+}
+
+.tip {
+  background-color: var(--svetla);
+  color: var(--tmava);
+  text-align: right;
+  padding: 20px 10px;
+}
+
+h1 {
+  color: var(--zelena);
+  font-size: 90px;
+}
+
+header {
+  grid-column: 2 / 3;
+}
+
+.meta {
+  color: var(--seda);
+  margin-top: 85px;
+}
+
+.text1 {
+  grid-column: 2 / 3;
+}
+
+.text2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.tip-vlevo {
+  grid-column: 1 / 2;
+  border-right: 3px solid var(--zluta);
+  display: inline;
+}
+
+.jmeno {
+  color: var(--oranzova);
+}
+
+figure {
+  grid-column: 1 / 4;
+  margin-left: 0;
+}
+
+figcaption {
+  color: var(--seda);
+}
+
+.text3 {
+  grid-column: 2 / 3;
+}
+
+blockquote {
+  grid-column: 2 / 3;
+}
+
+.text4 {
+  grid-column: 2 / 3;
+  margin: 0;
+}
+
+.text5 {
+  grid-column: 2 / 3;
+}
+
+.text6 {
+  grid-column: 2 / 3;
+}
+
+h2 {
+  color: var(--zelena);
+  font-size: 70px;
+  grid-column: 2 / 3;
+  margin-top: 40px;
+}
+
+.text7 {
+  grid-column: 2 / 3;
+}
+
+.text8 {
+  grid-column: 2 / 3;
+}
+
+.text9 {
+  grid-column: 2 / 3;
+  margin: 0;
+}
+
+.fotka {
+  width: 100px;
+}
+
+.center {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.text10 {
+  grid-column: 2 / 3;
+}
+
+footer {
+  grid-column: 2 / 3;
+  color: var(--seda);
+}
+
+footer a {
+  color: var(--seda);
+}
+
+.tip-vpravo {
+  border-left: 3px solid var(--zluta);
+  display: inline;
+  text-align: left;
+}
+
+blockquote {
+  color: var(--seda);
+  text-align: center;
+  font-size: 30px;
+  grid-column: 1 / 4;
+  position: relative;
+}
+
+blockquote::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: var(--limetka);
+  position: absolute;
+  bottom: -20px;
+  left: 500px;
+}
+
+blockquote::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: var(--limetka);
+  position: absolute;
+  bottom: 60px;
+  left: 500px;
+}
